@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function App() {
   return (
     <div className="flex w-full h-screen justify-evenly items-center flex-wrap">
@@ -21,13 +19,13 @@ function App() {
         </h1>
         <p className="text-xl">In case of emergency, click the red button.</p>
       </div>
-      <Link to="dino">
+      <button onClick={() => {}}>
         <img
           src="/images/emergency.png"
           alt="Emergency button"
           className="w-52 h-52"
         />
-      </Link>
+      </button>
     </div>
   );
 }
