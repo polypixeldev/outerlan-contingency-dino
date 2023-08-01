@@ -6,12 +6,12 @@ function App() {
       <div className="my-20 flex flex-col justify-start items-start">
         <div className="flex justify-start items-center my-5">
           <img
-            src="/images/outerlan-logo.png"
+            src="./images/outerlan-logo.png"
             alt="OuterLAN Logo"
             className="w-28 h-28 mx-auto"
           />
           <img
-            src="/images/dino.png"
+            src="./images/dino.png"
             alt="Contingency Dino"
             className="mx-auto w-28 h-28"
           />
@@ -23,7 +23,7 @@ function App() {
       </div>
       <Link to="dino">
         <img
-          src="/images/emergency.png"
+          src="./images/emergency.png"
           alt="Emergency button"
           className="w-52 h-52"
         />

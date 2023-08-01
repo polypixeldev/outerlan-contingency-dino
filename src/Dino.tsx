@@ -9,13 +9,13 @@ function Dino() {
   const [uptime, setUptime] = useState(0);
 
   const obs = [
-    "/images/opnsense.png",
-    "/images/authentik.png",
-    "/images/openwrt.png",
-    "/images/dell.png",
-    "/images/linksys.png",
-    "/images/proxmox.png",
-    "/images/ruckus.png",
+    "./images/opnsense.png",
+    "./images/authentik.png",
+    "./images/openwrt.png",
+    "./images/dell.png",
+    "./images/linksys.png",
+    "./images/proxmox.png",
+    "./images/ruckus.png",
   ];
 
   const [opnSenseProps, opnSenseApi] = useSpring(
@@ -130,19 +130,19 @@ function Dino() {
     <div
       ref={wrapperRef}
       style={{
-        background: "url('/images/server.jpg')",
+        background: "url('./images/server.jpg')",
       }}
     >
       <div className="h-screen flex flex-col justify-center items-start">
         <a.img
           ref={dinoRef}
-          src="/images/dino.png"
+          src="./images/dino.png"
           style={dinoProps}
           alt="Dino"
           className="relative ml-5 h-20 w-20"
         />
         <a.img
-          src="/images/explosion.gif"
+          src="./images/explosion.gif"
           ref={explosionRef}
           className="h-24 w-24 absolute"
         />
@@ -157,7 +157,7 @@ function Dino() {
       <div className="fixed top-0 w-screen h-screen flex flex-col justify-center items-end">
         <a.img
           ref={obsRef}
-          src="/images/opnsense.png"
+          src="./images/opnsense.png"
           className="w-16 h-16"
           style={opnSenseProps}
         />
