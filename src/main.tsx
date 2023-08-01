@@ -5,16 +5,21 @@ import App from "./App.tsx";
 import Dino from "./Dino.tsx";
 import "./index.css";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+    },
+    {
+      path: "/dino",
+      element: <Dino />,
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/dino",
-    element: <Dino />,
-  },
-]);
+    basename: "/outerlan-contingency-dino",
+  }
+);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
