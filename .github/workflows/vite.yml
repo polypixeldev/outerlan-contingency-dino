@@ -59,6 +59,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Vite
         run: ${{ steps.detect-package-manager.outputs.runner }} vite build
+      - name: Disable Jekyll
+        run: touch ./dist/.nojekyll
       - name: Upload pages
         uses: actions/upload-pages-artifact@v2
         with:
